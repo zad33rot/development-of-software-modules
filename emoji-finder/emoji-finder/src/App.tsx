@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import { Card } from './components/Card';
+import { getEmojis } from './api/apiEmoji';
 
 interface IEmoji {
   emoji: string;
@@ -9,23 +10,19 @@ interface IEmoji {
 }
 
 function App() {
-  const [emojis, setEmojis] = useState<IEmoji[]>([
-    {
-      emoji: '💯',
-      title: '100',
-      keywords: 'Hundred, points, symbol, wow, win, perfect, parties',
-    },
-    {
-      emoji: '😡',
-      title: 'angry',
-      keywords: 'angry, red',
-    },
-    {
-      emoji: '🐷',
-      title: 'pig',
-      keywords: 'pink, animal',
-    }
-  ]);
+  const [emojis, setEmojis] = useState<IEmoji[]>([]);
+  const [input, setInput] = useState("")
+
+  useEffect(() => {
+    fetchData();
+  }, [input])
+
+
+  async function fetchData() {
+    const data = await getEmojis(input);
+
+    setEmojis(data)
+  }
 
   return (
     <div className="app-container">
@@ -38,7 +35,9 @@ function App() {
         <input 
           type="text" 
           className="search-input" 
-          placeholder="Placeholder" 
+          placeholder="Enter here..." 
+          value={input}
+          onInput={(e) => setInput(e.currentTarget.value)}
         />
       </div>
 
