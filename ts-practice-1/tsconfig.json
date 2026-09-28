@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Язык и модули
+    "target": "esnext",                       // версия JavaScript, в которую компилируется код
+    "module": "nodenext",                     // модульная система (для Node.js)
+
+    // Строгость
+    "strict": true,                           // все строгие проверки типов
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Раскладка файлов
+    "rootDir": "./src",                       // корневая папка исходников
+    "outDir": "./dist",                       // папка для скомпилированных файлов
+
+    // Совместимость и корректность
+    "esModuleInterop": true,                  // совместимость с CommonJS-модулями
+    "forceConsistentCasingInFileNames": true, // строгий регистр в путях
+    "skipLibCheck": true,                     // пропуск проверки типов библиотек
+
+    // Прочее (оставляем как было)
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*"],                    // какие файлы компилировать
+  "exclude": ["node_modules", "dist"]         // что игнорировать
+}
