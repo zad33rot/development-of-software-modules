@@ -6,7 +6,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.leftGroup}>
         <div className={styles.dropdown}>
-          <span className={styles.burger}>☰</span> {/* Иконка гамбургера */}
+          <span className={styles.burger}>☰</span>
           <span>КАТАЛОГ</span>
           <span className={styles.arrow}>▼</span>
         </div>
@@ -17,7 +17,6 @@ export default function Header() {
       </div>
 
       <div className={styles.searchWrapper}>
-        {/* Иконка лупы внутри поиска */}
         <Image src="/search.svg" alt="Поиск" width={18} height={18} className={styles.searchIcon} />
         <input type="text" placeholder="Найти винил или аппаратуру" />
       </div>

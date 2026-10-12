@@ -34,8 +34,8 @@
 }
 
 .searchWrapper {
-  flex: 1; /* Заставляет поиск занимать свободное место */
-  max-width: 600px; /* Но не больше 600px, как в макете */
+  flex: 1;
+  max-width: 600px;
   display: flex;
   align-items: center;
   border: 1px solid #ddd;

@@ -4,7 +4,7 @@
   min-height: 70vh;
 }
 .image {
-  background: url('/hero-image.jpg') center/cover no-repeat; /* Замените на свою картинку */
+  background: url('/hero-image.jpg') center/cover no-repeat;
   background-color: #333;
 }
 .content {
