@@ -1,0 +1,49 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+}
+.image {
+  background: url('/hero-image.jpg') center/cover no-repeat; /* Замените на свою картинку */
+  background-color: #333;
+}
+.content {
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  max-width: 400px;
+}
+.cta {
+  background: var(--color-white);
+  color: var(--color-blue);
+  padding: 16px 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-self: flex-start;
+  transition: opacity 0.2s;
+}
+.cta:hover { opacity: 0.8; }
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .image { min-height: 300px; }
+  .content { padding: 40px 20px; }
+  .title { font-size: 2rem; }
+}

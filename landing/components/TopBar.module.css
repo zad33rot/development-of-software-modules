@@ -1,0 +1,75 @@
+.topbar {
+  display: flex;
+  justify-content: space-between; /* Раскидывает leftGroup и rightGroup по краям */
+  align-items: center;
+  padding: 16px 40px;
+  border-bottom: 1px solid #eee; /* Тонкая линия как в макете */
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Расстояние между логотипом и ссылками */
+}
+
+.logo { 
+  font-weight: 900; 
+  font-size: 20px; 
+  letter-spacing: 1px; 
+}
+
+.nav { 
+  display: flex; 
+  gap: 24px; 
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+.rightGroup { 
+  display: flex; 
+  gap: 20px; 
+  align-items: center; 
+  font-size: 14px;
+}
+
+.rightGroup img {
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.rightGroup a:hover img {
+  opacity: 0.6;
+}
+
+.login {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.icons a:hover {
+  opacity: 0.6;
+}
+
+.icons img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}

@@ -1,0 +1,35 @@
+.marquee {
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.track {
+  display: flex;
+  gap: 32px;
+  animation: scroll 20s linear infinite;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-left: 32px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.item::after {
+  content: '•';
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
