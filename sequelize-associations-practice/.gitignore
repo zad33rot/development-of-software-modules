@@ -1,0 +1,11 @@
+
+---
+
+## `.gitignore`
+
+```gitignore
+node_modules/
+database.sqlite
+*.sqlite
+*.sqlite-journal
+.env
