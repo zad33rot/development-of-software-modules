@@ -17,7 +17,7 @@ async function main() {
     console.log(`Добавлено машин: ${cars.length}`);
 
     const allCars = await Car.findAll();
-    console.log('\n📋 Список машин:');
+    console.log('\n Список машин:');
     console.log(JSON.stringify(allCars, null, 2));
 
   } catch (err) {
