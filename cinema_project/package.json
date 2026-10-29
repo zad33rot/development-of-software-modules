@@ -1,0 +1,13 @@
+{
+  "name": "cinema-mini",
+  "version": "1.0.0",
+  "main": "queries.js",
+  "scripts": {
+    "seed": "node seed.js",
+    "queries": "node queries.js"
+  },
+  "dependencies": {
+    "sequelize": "^6.37.0",
+    "sqlite3": "^5.1.6"
+  }
+}

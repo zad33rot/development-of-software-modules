@@ -1,0 +1,23 @@
+# зависимости
+node_modules/
+
+# база данных SQLite (создаётся автоматически, в git не нужна)
+database.sqlite
+*.sqlite
+*.sqlite3
+
+# логи
+*.log
+npm-debug.log*
+
+# окружение
+.env
+.env.local
+
+# системный мусор
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
